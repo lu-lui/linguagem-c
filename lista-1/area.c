@@ -3,12 +3,17 @@
 #include <stdio.h>
 
 int main(){
-int b, h;
-float a;
+float base, altura, area;
     printf("Digite o valor da base: ");
-    scanf("%d", &b);
+    scanf("%f", &base);
+
     printf("Digite o valor da altura: ");
-    scanf("%d", &h);
-    a = b * h;
-    printf("A area do retangulo e: %.1f", a);
+    scanf("%f", &altura);
+
+    area = base * altura;
+
+    if (base <= 0 || altura <= 0)
+        printf("Nao e um retangulo");
+    else
+        printf("A area do retangulo e: %.1f", area);
 }
