@@ -10,7 +10,7 @@ int main(){
     scanf("%f", &brancos);
     printf("Numero de votos nulos: \n");
     scanf("%f", &nulos);
-    printf("Numero de votos válidos: \n");
+    printf("Numero de votos validos: \n");
     scanf("%f", &validos);
     totalVotos = brancos + nulos + validos;
     printf ("Total de votos: %.1f\n", totalVotos);
