@@ -28,7 +28,6 @@ int main(){
                     if (idade >= 5)
                         printf("Classificacao: INFANTIL A");
                     else
-                        if (idade < 5)
-                            printf("O nadador nao possui idade para competir");
+                       printf("O nadador nao possui idade para competir");
 
 }
