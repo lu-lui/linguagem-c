@@ -6,3 +6,26 @@
 [Saída]      | [Saída]      | [Saída]
 4.5 (média)  | 8.5 (média)  | 1.5 (média)
 em Exame     | Aprovado     | Reprovado*/
+
+#include <stdio.h>
+
+int main(){
+    float nota1, nota2, media;
+    printf("Nota 1: ");
+    scanf("%f", &nota1);
+
+    printf("Nota 2: ");
+    scanf("%f", &nota2);
+
+    media = (nota1 + nota2) / 2;
+
+    printf("Media do aluno: %.1f\n", media);
+
+    if (media >= 7)
+        printf("APROVADO");
+    else 
+        if (media <7 && media >= 3)
+            printf("EM EXAME");
+        else
+            printf("REPROVADO");
+}
