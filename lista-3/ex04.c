@@ -20,17 +20,15 @@ int main(){
             scanf("%f", &medidaLados);
             area = medidaLados * medidaLados;
             printf("O poligono e um quadrado de area %.1f", area);
-        }
-        else 
+        } else 
             if (numeroLados == 3){
             printf("Medida dos lados: ");
             scanf("%f", &medidaLados);
             perimetro = medidaLados * 3;
             printf("O poligono e um triangulo de perimetro %.1f", perimetro); 
-        }
-            else 
-                if (numeroLados < 3)
-                    printf("NAO E UM POLIGONO");
-                else
-                    printf("POLIGONO NAO IDENTIFICADO");           
+        } else 
+            if (numeroLados < 3)
+                printf("NAO E UM POLIGONO");
+            else
+                printf("POLIGONO NAO IDENTIFICADO");           
     }

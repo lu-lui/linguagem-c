@@ -12,3 +12,28 @@ I        | II       | III      | IV
                  |                 |
 [Saída]          | [Saída]         | [Saída]
 Nenhum quadrante |Nenhum quadrante | Nenhum quadrante*/
+
+#include <stdio.h>
+
+int main(){
+    float X, Y;
+
+    printf("Digite as cordenadas cartesianas:\nCordenada X: ");
+    scanf("%f", &X);
+    printf("Cordenada Y: ");
+    scanf("%f", &Y);
+
+    if (X > 0 && Y > 0)
+        printf("O ponto pertence ao quadrante I");
+    else
+        if (X < 0 && Y > 0)
+            printf("O ponto pertence ao quadrante II");
+        else
+            if (X < 0 && Y < 0)
+                printf("O ponto pertence ao quadrante III");
+            else
+                if (X > 0 && Y < 0)    
+                    printf("O ponto pertence ao quadrante IV");
+                else
+                    printf("O ponto nao pertence a nenhum quadrante");
+}
