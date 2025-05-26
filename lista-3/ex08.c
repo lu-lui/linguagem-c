@@ -1,4 +1,4 @@
-/*4.8.Escreva um algoritmo para ler 3 valores e escrevê-los em ordem crescente. Considere que os usuário não informará valores iguais.*/
+/*4.8.Escreva um algoritmo para ler 3 valores e escrevê-los em ordem crescente. Considere que os usuário não informará valores iguais.10*/
 
 #include <stdio.h>
 
