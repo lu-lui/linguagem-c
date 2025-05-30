@@ -2,6 +2,26 @@
 
 #include <stdio.h>
 
-int main(){
-    
+int main() {
+    int i, Num, Contador, soma, fatorial;
+
+    for (Contador = 1; Contador <= 10; Contador++) {
+        soma = 0;
+        fatorial = 1;
+
+        printf("Informe o numero:\n");
+        scanf("%d", &Num);
+
+        if (Num < 7) {
+            for (i = 1; i <= Num; i++) {
+                fatorial = fatorial * i;
+            }
+            printf("Fatorial: %d\n", fatorial);
+        } else {
+            for (i = 1; i <= Num; i++) {
+                soma = soma + i;
+            }
+            printf("Soma: %d\n", soma);
+        }
+    }
 }

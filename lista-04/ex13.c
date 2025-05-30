@@ -3,6 +3,18 @@ S = 1 + (8-4)/3 + (12-3)/5 + (16-4)/7 + (20-3)/9 + ⋯ */
 
 #include <stdio.h>
 
-int main(){
-    
+int main() {
+    int N;
+    printf("N° de termos da série a gerar: ");
+    scanf("%d", &N);
+
+    for (int i = 1; i <= N; i++) {
+        double T;
+        if (i % 2 == 0) {
+            T = (double)((4 * i) - 4) / (2 * i - 1);  
+        } else {
+            T = (double)((4 * i) - 3) / (2 * i - 1);  
+        }
+        printf("Termo %d: %.2lf\n", i, T);
+    }
 }

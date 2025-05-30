@@ -4,15 +4,16 @@
 
 int main(){
 
-    int numero, n;
+    int numero, n, fatorial;
 
     printf("Digite um numero: ");
-    scanf("%d", numero);
+    scanf("%d", &numero);
 
-    n = numero; 
-    for(n = numero; n = 1; n--){
-        n * n;
-    printf("O fatorial de %d e %d", numero, n);
+    fatorial = 1; 
+
+    for (n = numero; n >= 2; n--){
+        fatorial = fatorial * n;
     }
+
+    printf("O fatorial de %d e %d", numero, fatorial);
 }
-//fazer dps
