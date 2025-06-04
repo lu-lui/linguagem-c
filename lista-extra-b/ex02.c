@@ -1,6 +1,4 @@
-/*Exercícios 09 – Algoritmos com repetição III
-9.1.Escreva um algoritmo para ler 2 notas de um aluno, calcular e imprimir a média final. Logo após escrever a mensagem "Calcular a média de outro aluno 1.Sim 2.Não?" e solicitar uma resposta. Se a
-resposta for 1, o algoritmo deve ser executado novamente, caso contrário deve ser encerrado imprimindo a quantidade de alunos aprovados.
+/*9.2.Reescreva o algoritmo do exercício 9.1, para que seja impressa no final, a quantidade de alunos aprovados, reprovados ou que ficaram em exame.
 [Entrada] [Saída]
 8 (nota 1) 9 (nota 2) 8.5 (média)
  Calcular a média de outro aluno (1.sim 2.não)?
@@ -18,4 +16,6 @@ resposta for 1, o algoritmo deve ser executado novamente, caso contrário deve s
  Calcular a média de outro aluno (1.sim 2.não)?
 2
  3 (quantidade de aprovados)
+1 (quantidade de reprovados)
+1 (quantidade de alunos em exame)
 */
