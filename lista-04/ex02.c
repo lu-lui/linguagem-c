@@ -5,11 +5,11 @@
 
 int main(){
 
-    int numero;
+    int x;
 
-    for (numero = 100; numero <= 200; numero++){
-        if (numero % 2 != 0)
-            printf("%d\n", numero);
+    for (x = 100; x <= 200; x++){
+        if (x % 2 != 0)
+            printf("%d\n", x);
     }
 
 }

@@ -4,6 +4,25 @@
 10 (primeiro valor)
 0 (segundo valor)
 0 (segundo valor)
-2 (segundo valor) 5
+2 (segundo valor) 5*/
 
-*/
+#include <stdio.h>
+
+int main(){
+    int v1, v2;
+    float divisao;
+    
+    printf("Digite um dividendo: ");
+    scanf("%d", &v1);
+    printf("Digite um divisor: ");
+    scanf("%d", &v2);
+
+    while (v2 == 0)
+    {
+        printf("Valor invalido, digite um numero diferente de 0: ");
+        scanf("%d", &v2);
+    }
+    
+    divisao = v1 / v2;
+    printf("O resultado da divisao de %d por %d e %.2f", v1, v2, divisao);
+}

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(){
-    int valor, multiplicador;
+    int valor;
 
     printf("Digite um valor inteiro de 1 a 10: ");
     scanf("%d", &valor);
@@ -13,8 +13,8 @@ int main(){
         scanf("%d", &valor);
     }
 
-    for(multiplicador = 10; multiplicador >= 1; multiplicador--){
-        printf("%d X %d = %d\n", valor, multiplicador, valor * multiplicador);
+    for(int m = 10; m >= 1; m--){
+        printf("%d X %d = %d\n", valor, m, valor * m);
 
     }
 }
