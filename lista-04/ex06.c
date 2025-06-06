@@ -3,24 +3,19 @@
 #include <stdio.h>
 
 int main() {
-    int cont, numero, par, impar, somapar, somaimpar;
+    int numero, par=0, impar=0, somapar=0, somaimpar=0;
     float mediaimpar;
 
-    par = 0;
-    impar = 0;
-    somapar = 0;
-    somaimpar = 0;
-
-    for (cont = 1; cont <= 10; cont++) {
+    for (int x = 1; x <= 10; x++) {
         printf("Digite um valor inteiro:\n");
         scanf("%d", &numero);
 
-        if (numero % 2 == 0) {  // Se for par
+        if (numero % 2 == 0) {
             par++;
-            somapar += numero;
-        } else {  // Se for ímpar
+            somapar = somapar + numero;
+        } else { 
             impar++;
-            somaimpar += numero;
+            somaimpar = somaimpar + numero;
         }
     }
 
@@ -30,8 +25,8 @@ int main() {
 
     if (impar > 0) {
         mediaimpar = (float)somaimpar / impar;
-        printf("Media dos números ímpares: %.2f\n", mediaimpar);
+        printf("Media dos numeros impares: %.2f\n", mediaimpar);
     } else {
-        printf("Média inexistente\n");
+        printf("Media inexistente\n");
     }
 }

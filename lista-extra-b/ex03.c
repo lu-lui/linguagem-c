@@ -26,8 +26,8 @@
 #include <stdio.h>
 
 int main(){
-    float n1, n2, media;
-    int resposta, aprovado=0, reprovado=0, exame=0; //Iniciar contador
+    float n1, n2, media, pA, pR, pE;
+    int resposta, aprovado=0, reprovado=0, exame=0, aluno=0; //Iniciar contador
 
     do{
         printf("Nota 1: ");
@@ -46,6 +46,7 @@ int main(){
             scanf("%f", &n2);
         }
 
+        aluno = aluno + 1;
         media = (n1 + n2) / 2;
 
         if(media >= 7)
@@ -59,5 +60,9 @@ int main(){
         scanf("%d", &resposta);
     } while (resposta == 1);
    
-    printf("Alunos aprovados: %d\nAlunos em exame: %d\nAlunos reprovados: %d", aprovado, exame, reprovado);
+    pA = (float) aprovado / aluno * 100;
+    pE = (float) exame / aluno * 100;
+    pR = (float) reprovado / aluno * 100;
+
+    printf("Total de alunos na turma: %d\nAlunos aprovados: %d\nAlunos em exame: %d\nAlunos reprovados: %d\n\nPercentual de aprovados: %.2f\nPercentual de alunos em exame: %.2f\nPercentual de reprovados: %.2f\n", aluno, aprovado, exame, reprovado, pA, pE, pR);
 }

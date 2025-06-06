@@ -25,5 +25,10 @@ número de gols marcados pelo GRÊMIO em um GRENAL, imprimindo o nome do time vi
 1 (vitórias do Inter)
 2 (vitórias do Grêmio)
 2 (quantidade de empates)
-Grêmio venceu mais grenais
-*/
+Grêmio venceu mais grenais */
+
+#include <stdio.h>
+
+int main(){
+    
+}

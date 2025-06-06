@@ -4,13 +4,11 @@
 #include <math.h>
 
 int main() {
-    int i;
-    double Termo;  
+  
+    double termo;  
 
-    for (i = 0; i <= 29; i++) {
-        Termo = pow(3, i);  
-        printf("%.0lf\n", Termo);
+    for (int i = 0; i <= 29; i++) {
+        termo = pow(3, i);  
+        printf("%.0lf\n", termo);
     }
-
-    return 0;
 }
