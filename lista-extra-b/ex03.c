@@ -58,6 +58,11 @@ int main(){
                 reprovado = reprovado + 1;
         printf("Media final: %.2f\nCalcular a media de outro aluno?\n1.Sim 2.Nao\n", media);
         scanf("%d", &resposta);
+
+        while(resposta != 1 && resposta != 2){
+            printf("Resposta invalida, tente novamente:\n");
+            scanf("%d", &resposta);
+        }
     } while (resposta == 1);
    
     pA = (float) aprovado / aluno * 100;

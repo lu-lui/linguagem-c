@@ -13,7 +13,7 @@ int main(){
     printf("ACESSO NEGADO\nDigite a senha: ");
         scanf("%d", &senha);
 
-        tentativa = tentativa + 1;
+        tentativa++;
     } 
 
     printf("ACESSO PERMITIDO\nNumero de tentativas: %d", tentativa);
