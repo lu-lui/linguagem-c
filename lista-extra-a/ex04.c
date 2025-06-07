@@ -13,10 +13,11 @@ int main(){
         scanf("%d", &v2); 
 
         if(v2 == 0)
-        printf("Valor invalido, tente novamente com um divisor diferente de 0!");
+        printf("Valor invalido, tente novamente com um divisor diferente de 0!\n");
 
-        divisao = v1 / v2;
     } while (v2 == 0);
 
+    divisao = (float) v1 / v2;
+    
     printf("O resultado da divisao de %d por %d e %.2f", v1, v2, divisao);
 } // Já tinha feito isso no exercício 3 :)
