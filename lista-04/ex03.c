@@ -4,12 +4,15 @@
 
 int main(){
 
-    int numero, n, fatorial;
+    int numero, n, fatorial=1;
 
     printf("Digite um numero: ");
     scanf("%d", &numero);
-
-    fatorial = 1; 
+    
+    while(numero < 1){
+        printf("Valor invalido, digite um valor maior que 0.\n");
+        scanf("%d", &numero);
+    }
 
     for (n = numero; n >= 2; n--){
         fatorial = fatorial * n;
