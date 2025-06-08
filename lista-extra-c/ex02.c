@@ -4,3 +4,24 @@
  3 (dentro do intervalo)
 7 (fora do intervalo)
 */
+
+#include <stdio.h>
+
+int main(){
+    
+    float valor;
+    int dentro=0, fora=0;
+
+    for (int i = 1; i <= 10; i++){
+        printf("Digite um valor: ");
+        scanf("%f", &valor);
+
+        if(valor >= 10 && valor <= 20)
+            dentro++;
+        else
+            fora++;
+    }
+    
+    printf("Valores dentro do intervalo [10, 20]: %d \nValores fora do intervalo [10, 20]: %d", dentro, fora);
+
+}
