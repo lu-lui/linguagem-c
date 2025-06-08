@@ -15,6 +15,5 @@ int main(){
 
     for(int m = 10; m >= 1; m--){
         printf("%d X %d = %d\n", valor, m, valor * m);
-
     }
 }
