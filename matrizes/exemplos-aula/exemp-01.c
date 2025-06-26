@@ -10,7 +10,7 @@ int main(){
         for(int c=0; c<3; c++){
             m[l][c] = 0;
             
-             printf("%d", m[l][c]);
+             printf("%d ", m[l][c]);
         }
        printf("\n");
     }
