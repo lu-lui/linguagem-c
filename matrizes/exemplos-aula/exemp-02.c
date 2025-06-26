@@ -27,3 +27,29 @@ int main(){
     }
      printf("Soma da matriz: %d", soma);
 }
+
+/*Exemplos somando:
+
+1- Apenas a coluna (2):
+for(int l=0; l<5; l++){
+soma += m[l][2];
+}
+
+2- Apenas a linha (3): 
+for(int c=0; c<5; c++){
+soma += m[3][c];
+}
+
+3- Apenas a diagonal principal:
+for(int i=0; i<5; i++){
+soma += m[i][i];
+-> Diagonal principal: linha == coluna
+}
+
+4- Diagonal secundária:
+int c = 4;
+for(int i=0; i<5; i++){
+soma += m[i][c];     ou     soma += m[i][4-i]
+c--;
+}
+*/
