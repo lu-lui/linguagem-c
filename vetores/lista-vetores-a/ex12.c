@@ -1,14 +1,24 @@
-/*14.12 Ler um vetor X de 10 elementos. A seguir copie todos os valores negativos de vetor X para o vetor R (sem deixar elementos vazios entre os valores copiados). Escrever o vetor R.
-[Entrada: Vetor X]
- 0 1 2 3 4 5 6 7 8 9
-+----+----+----+----+----+----+----+----+----+----+
-| 21 | 13 | -2 | -1 | 12 | -4 | -5 | 42 | 0 | 32 |
-+----+----+----+----+----+----+----+----+----+----+
-[Vetor R após a cópia]
- 0 1 2 3 4 5 6 7 8 9
-+----+----+----+----+----+----+----+----+----+----+
-| -2 | -1 | -4 | -5 | | | | | | |
-+----+----+----+----+----+----+----+----+----+----+
-[Saída]
--2 -1 -4 -5
-*/
+/*14.12 Ler um vetor X de 10 elementos. A seguir copie todos os valores negativos de vetor X para o vetor R (sem deixar elementos vazios entre os valores copiados). Escrever o vetor R.*/
+
+#include <stdio.h>
+
+int main(){
+    int X[10], R[10], a=0;
+
+    printf("Vetor X: \n");
+    for (int i = 0; i < 10; i++){
+        scanf("%d", &X[i]);
+    }
+
+    for (int i = 0; i < 10; i++){
+        if (X[i] < 0){
+            R[a] = X[i];
+            a++;
+        }
+    }
+    
+    for (int i = 0; i < a; i++){
+      printf("%d ", R[i]);
+    }
+    
+}
