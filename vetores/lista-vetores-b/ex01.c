@@ -13,3 +13,25 @@ Vetor S | 13 | 31 | 3 | 21 | 14 | 6 | 1 | 42 | 23 | 32 |
  +----+----+----+----+----+
 Vetor R | 21 | 1 | 3 | | |
  +----+----+----+----+----+*/
+
+ /*#include <stdio.h>
+
+ int main(){
+    int R[5], S[10], X[5];
+
+    printf("Vetor R: \n");
+    for (int i = 0; i < 5; i++){
+        scanf("%d", &R[i]);
+    }
+
+    printf("Vetor S: \n");
+    for (int i = 0; i < 10; i++){
+        scanf("%d", &S[i]);
+    }
+
+    
+
+    }
+    
+    
+ }*/
