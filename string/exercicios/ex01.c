@@ -1,1 +1,18 @@
-/*1. Escreva um programa que leia um texto pelo teclado. Em seguida, faça uma função que inverta e exiba-o na tela. Exemplo: Para a string "Bom dia" o programa imprime "aid moB" Obs: O objetivo é alterar os caracteres na string, não é imprimir ao contrário!*/
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char texto[100];
+    int tamanho;
+
+    printf("Digite um texto: ");
+    fgets(texto, 100, stdin);
+
+    tamanho = strlen(texto);
+
+    for (int  i = tamanho - 1; i >= 0; i--) {
+        printf("%c", texto[i]);
+    }
+
+
+}
