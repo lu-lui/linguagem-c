@@ -11,8 +11,7 @@ int main(){
         printf("Nota 1: ");
         scanf("%f", &nota1);
 
-        while (nota1 <= 0 || nota1 > 10)
-        {
+        while (nota1 <= 0 || nota1 > 10){
             printf("Nota invalida\n");
             scanf("%f", &nota1);
         }
@@ -20,8 +19,7 @@ int main(){
         printf("Nota 2: ");
         scanf("%f", &nota2);
 
-        while (nota2 <= 0 || nota2 > 10)
-        {
+        while (nota2 <= 0 || nota2 > 10){
             printf("Nota invalida\n");
             scanf("%f", &nota2);
         }

@@ -11,8 +11,7 @@ int main(){
     printf("Digite um divisor: ");
     scanf("%d", &v2);
 
-    while (v2 == 0)
-    {
+    while (v2 == 0){
         printf("Valor invalido, digite um numero diferente de 0: ");
         scanf("%d", &v2);
     }
