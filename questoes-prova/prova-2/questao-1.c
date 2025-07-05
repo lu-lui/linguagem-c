@@ -1,0 +1,1 @@
+/*Escreva um programa em C que leia uma frase e uma palavra, armazenando-as em duas strings respectivamente. Verifique se esta palavra está contida na frase pelo menos uma vez e escreva uma mensagem afirmando ou negando esse fato*/

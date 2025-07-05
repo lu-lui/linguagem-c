@@ -1,0 +1,1 @@
+/*Escreva um programa em C que leia 300 valores inteiros e armazene-os em um vetor, aceitar somente positivos. Uma mensagem de valor invalido deve ser mostrada se o valor digitado for menor que zero e solicitada uma nova leitura. Calcule a media aritmética destes valores e conte quantos valores armazenados no vetor estao acima desta media, escrevendo esses resultados. */
