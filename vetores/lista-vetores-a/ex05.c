@@ -7,8 +7,7 @@ int main(){
 
     for (int i = 0; i < 10; i++){
         scanf("%d", &D[i]);
-        E[i] = D[i];
-        
+        E[i] = D[i];  
     }
 
     for(int i=0; i<10; i++){
@@ -20,5 +19,4 @@ int main(){
     for(int i=0; i<10; i++){
         printf("%d ", E[i]);
     }
-    
 }

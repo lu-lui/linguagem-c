@@ -1,18 +1,4 @@
-/*14.15 Ler um vetor U de 10 elementos. Troque a seguir o 1o. elemento com o último, o 2o. com o penúltimo, etc. até o 5o. com o 6o. e escreva o vetor U assim modificado.
-[Entrada]
- 0 1 2 3 4 5 6 7 8 9
- +----+----+----+----+----+----+----+----+----+----+
-Vetor U | 21 | 12 | 1 | 0 | 14 | -4 | -5 | 42 | 23 | 32 |
- +----+----+----+----+----+----+----+----+----+----+
- ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
- | | | | | | | | | |
- | | | | +----+ | | | |
- | | | +--------------+ | | |
- | | +------------------------+ | |
- | +----------------------------------+ |
- +--------------------------------------------+
-[Saída]
-32 23 42 -5 -4 14 0 1 12 21*/
+/*14.15 Ler um vetor U de 10 elementos. Troque a seguir o 1o. elemento com o último, o 2o. com o penúltimo, etc. até o 5o. com o 6o. e escreva o vetor U assim modificado.*/
 
 #include <stdio.h>
 
@@ -21,6 +7,17 @@ int main(){
 
     for (int i = 0; i < 10; i++){
         scanf("%d", &U[i]);
+    }    
+
+    for (int i = 0; i < 5; i++){
+        int temp = U[i];
+        U[i] = U[9 - i];
+        U[9 - i] = temp;
+
+        printf("%d ", U[i]);
     }
     
+    for (int i = 5; i < 10; i++){
+        printf("%d ", U[i]);
+    }   
 }
