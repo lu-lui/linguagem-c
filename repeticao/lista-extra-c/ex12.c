@@ -7,3 +7,24 @@ Ex: Fatorial de 4 = 4*3*2*1 = 24
           |           |           |
 [Saída]   | [Saída]   | [Saída]   | [Saída]
 1         | 6         | 120       | 24*/
+
+#include <stdio.h>
+
+int main(){
+
+    int numero, fatorial=1; 
+
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+
+    while (numero < 0){
+        printf("Valor invalido, digite um numero positivo: ");
+        scanf("%d", &numero);
+    }
+ 
+    for (int i = numero; i >= 1; i--){
+        fatorial = fatorial * i;
+    }
+    
+    printf("%d", fatorial);
+}
