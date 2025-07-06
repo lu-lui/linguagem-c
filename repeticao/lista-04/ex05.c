@@ -5,7 +5,7 @@
 int main() {
     int Soma=0, t1=0, t2=1, t3, x;
 
-    printf("Número de termos a calcular:\n");
+    printf("Numero de termos a calcular:\n");
     scanf("%d", &x);
 
     if (x >= 1) {
@@ -27,6 +27,5 @@ int main() {
     }
 
     printf("Soma dos %d termos: %d\n", x, Soma);
-
 }
 

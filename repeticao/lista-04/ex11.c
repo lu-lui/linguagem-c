@@ -4,25 +4,18 @@
 #include <math.h>
 
 int main() {
-    double x, Termo, S;
+    double x, Termo=1, S=0;
     int i;
 
     printf("Digite x:\n");
     scanf("%lf", &x);
 
-    S = 0;
-    Termo = 1;
-
-    printf("%.6lf\n", Termo);
+    printf("%.10lf\n", Termo);
     S = S + Termo;
 
     for (i = 2; i <= 20; i++) {
         Termo = 1.0 / pow(x, i);
-        printf("%.6lf\n", Termo);
+        printf("%.10f\n", Termo);
         S = S + Termo;
     }
-
-    printf("O resultado da série é: %.6lf\n", S);
-
-    return 0;
 }

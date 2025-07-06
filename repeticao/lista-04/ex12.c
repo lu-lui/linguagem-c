@@ -2,13 +2,15 @@
 
 #include <stdio.h>
 
-int main() {
-    float S=0, n=1;
+int main(){
+    float S, x=1;
 
-    for (int x = 1; x <= 50; x++){
-        S = S + n / x;
-        n = n + 2;
+    S = x / 1;
+
+    for (int i = 2; i <= 50; i++){
+        x += 2;
+        S += x / i;
     }
 
-    printf("%f", S);
+    printf("Resultado da serie: %f", S);
 }
