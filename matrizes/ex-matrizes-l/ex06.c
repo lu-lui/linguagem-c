@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 int main(){
-    float A[12][13], X[2] = {-1000} ;
+    float A[12][13], X[2] = {-1000, -1000} ;
 
     printf("Matriz A: \n");
     for (int l = 0; l < 12; l++){
