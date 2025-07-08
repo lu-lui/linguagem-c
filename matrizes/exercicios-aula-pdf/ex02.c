@@ -4,3 +4,11 @@ b) da coluna 2 de V;
 c) da diagonal principal;
 d) da diagonal secundária; e
 e) de todos os elementos da matriz */
+
+/*
+#include <stdio.h>
+
+int main(){
+    int V[3][3];
+}
+*/

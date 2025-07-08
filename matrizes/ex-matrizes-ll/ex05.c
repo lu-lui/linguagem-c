@@ -3,3 +3,11 @@ Matriz A        Matriz T
 5  3  20         5   2
 2  1  12         3   1
                 20  12*/
+
+/*
+#include <stdio.h>
+
+int main(){
+    int L, C, A[10][10], T[10][10];
+}
+*/

@@ -10,3 +10,11 @@
 3   | 20 | 30 | 12 | 0  |
     +----­­­­­­­+----­­­­­­­+----­­­­­­­+----­­­­­­­+
 Exemplo: Cidades: 1 e 3 : Distância 30*/
+
+/*
+#include <stdio.h>
+
+int main(){
+    int c1, c2, M[4][4], distancia;
+}
+*/
