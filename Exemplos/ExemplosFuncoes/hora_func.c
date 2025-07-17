@@ -35,5 +35,3 @@ int main(){
   printf("Tempo decorrido %d : %d : %d", diferenca.hora, diferenca.minuto,diferenca.segundo);
 
 }
-
-

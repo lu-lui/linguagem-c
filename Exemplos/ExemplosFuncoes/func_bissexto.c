@@ -4,7 +4,6 @@ struct data {
 	int dia,mes,ano;
 	}; 
 
-
 //-------------------------------------------------------
 int eh_bissexto(int a){
 	
@@ -65,8 +64,6 @@ int calcularDiasDesdeInicioDoAno(struct data d) {
     return dias;
 }
 
-
-
 //-------------------------------------------------------	
 int calcularDiasTotais(struct data d) {
     int dias = 0;
@@ -79,6 +76,7 @@ int calcularDiasTotais(struct data d) {
 
     return dias;
 }
+
  //-------------------------------------------------------	
 int diferencaEntreDatas(struct data d1, struct data d2) {
     int diasData1 = calcularDiasTotais(d1);
@@ -105,4 +103,3 @@ int main(){
 	printf("Dias decorridos entre as datas: %d", diferencaEntreDatas(dIni,dFim));  
 	
 }
-	

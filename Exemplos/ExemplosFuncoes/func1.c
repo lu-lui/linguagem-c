@@ -18,8 +18,6 @@ float comp_circulo (float raio){
 	return res;
 	}
 
-
-
 int main() {
 int a,b,resultado;
 float ra;

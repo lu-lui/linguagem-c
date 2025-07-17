@@ -2,7 +2,6 @@
 
 float le_nota();
 
-
 int main(){
 
   float nota, nota2;
@@ -11,6 +10,7 @@ int main(){
   nota2 = le_nota();
 
 }
+
 float le_nota(){
 	float n;
 	

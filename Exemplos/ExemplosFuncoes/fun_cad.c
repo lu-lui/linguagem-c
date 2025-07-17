@@ -67,7 +67,7 @@ float le_nota(char msg[20]){
 }
 
 //---Funcao le_aluno
-//le os dados eferentes a um aluno
+//le os dados referentes a um aluno
 //retorna estrutura Aluno com dados lidos
 struct aluno leAluno(){
 	struct aluno a;
