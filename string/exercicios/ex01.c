@@ -6,7 +6,7 @@ int main() {
     int tamanho;
 
     printf("Digite um texto: ");
-    fgets(texto, 100, stdin);
+    fgets(texto, sizeof(texto), stdin);
 
     tamanho = strlen(texto);
 

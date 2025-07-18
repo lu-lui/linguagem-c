@@ -1,19 +1,26 @@
 /* 3. Escreva um programa que conte a quantidade de palavras de um texto digitado pelo teclado. (Uma palavra é qualquer sequência de caracteres separada por um ou mais espaços).*/
 
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
-int main() {
-    char s[100];
-    int palavras = 1;
+int main(){
+   char texto[200];
+   int i, c = 1;
 
-    fgets(s, 100, stdin);
+   while (1){
+       c=1;
 
-    for (int i = 0; s[i] != '\0'; i++) {
-        if (s[i] != ' ' && s[i - 1] == ' ') {
-            palavras++;
-        }
-    }
+       printf("Digite um texto: \n");
+       fgets(texto, sizeof(texto), stdin);
+       i = 0;
+       while (texto[i] == ' ')
+           i++;
 
-    printf("O texto possui %d palavras\n", palavras);
+   for (; texto[i] != '\0'; i++){
+       if (texto[i] == ' ' && texto[i-1] != '\0' && texto[i+1 != '\0'])
+       c++;
+   }
+
+   printf("O texto possui %d palavras. \n", c);
+   } 
 }
