@@ -1,0 +1,1 @@
+/*5) Escreva uma função recursiva que receba um vetor e imprima todos os seus valores (O vetor pode ter qualquer tamanho). */
