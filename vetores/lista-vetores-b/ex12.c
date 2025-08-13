@@ -5,33 +5,53 @@
 [Saída]
 4 5 2 1 (vetor X)*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 
-int main(){
-    int R[10], S[20], X[10], x=0;
+int main() {
+    int R[10], S[20], X[10];
+    int i, j, k;
+    int x = 0;
+    int existe;
 
-    printf("Vetor R: \n");
-    for (int i = 0; i < 10; i++){
+    printf("Vetor R:\n");
+    for (i = 0; i < 10; i++) {
         scanf("%d", &R[i]);
     }
-    
-    printf("Vetor S: \n");
-    for (int i = 0; i < 20; i++){
+
+    printf("Vetor S:\n");
+    for (i = 0; i < 20; i++) {
         scanf("%d", &S[i]);
     }
 
-    for (int i = 0; i < 20; i++){
-        for (int j = 0; j < 10; j++){
-            if (R[j] == S[i]){
+    for (i = 0; i < 10; i++) {
+
+        int achou = 0;
+        for (j = 0; j < 20; j++) {
+            if (R[i] == S[j]) {
+                achou = 1;
+                break;
+            }
+        }
+
+        if (achou) {
+            existe = 0;
+            for (k = 0; k < x; k++) {
+                if (X[k] == R[i]) {
+                    existe = 1;
+                    break;
+                }
+            }
+
+            if (!existe) {
                 X[x] = R[i];
                 x++;
             }
-            
         }
-        
     }
-    
-    for (int i = 0; i < x; i++){
+
+    printf("Vetor X:\n");
+    for (i = 0; i < x; i++) {
         printf("%d ", X[i]);
     }
-}*/
+    printf("\n");
+}

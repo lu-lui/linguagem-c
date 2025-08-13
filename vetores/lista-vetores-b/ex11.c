@@ -5,32 +5,54 @@
 [Saída]
 7 4 5 2 1 3 6 12 8 27 11 31 42 61 9 17 19 (vetor X)*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     int R[10], S[20], X[30];
+    int tamX = 0; 
+    int existe, i, j;
 
-    printf("Vetor R: \n");
-    for (int i = 0; i < 10; i++){
+    printf("Vetor R:\n");
+    for (i = 0; i < 10; i++) {
         scanf("%d", &R[i]);
     }
-    
-    printf("Vetor R: \n");
-    for (int i = 0; i < 0; i++){
+
+    printf("Vetor S:\n");
+    for (i = 0; i < 20; i++) {
         scanf("%d", &S[i]);
     }
 
-    for (int i = 0; i < 20; i++){
-        int x=0;
-
-        for (int j = 0; j < 10; j++){
-            if (S[i] == R[j]){
-                X[x] = S[i];
-                x++;
+    for (i = 0; i < 10; i++) {
+        existe = 0;
+        for (j = 0; j < tamX; j++) {
+            if (X[j] == R[i]) {
+                existe = 1;
+                break;
             }
-            
         }
-        
+        if (!existe) {
+            X[tamX] = R[i];
+            tamX++;
+        }
     }
-    
-}*/
+
+    for (i = 0; i < 20; i++) {
+        existe = 0;
+        for (j = 0; j < tamX; j++) {
+            if (X[j] == S[i]) {
+                existe = 1;
+                break;
+            }
+        }
+        if (!existe) {
+            X[tamX] = S[i];
+            tamX++;
+        }
+    }
+
+    printf("Vetor X:\n");
+    for (i = 0; i < tamX; i++) {
+        printf("%d ", X[i]);
+    }
+    printf("\n");
+}
