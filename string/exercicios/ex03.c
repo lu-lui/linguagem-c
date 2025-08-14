@@ -8,7 +8,7 @@ int main(){
    int i, c = 1;
 
    while (1){
-       c=1;
+       c=0;
 
        printf("Digite um texto: \n");
        fgets(texto, sizeof(texto), stdin);
@@ -17,7 +17,7 @@ int main(){
            i++;
 
    for (; texto[i] != '\0'; i++){
-       if (texto[i] == ' ' && texto[i-1] != '\0' && texto[i+1 != '\0'])
+       if (texto[i] == ' ' && texto[i-1] != '\0' && texto[i+1] != '\0')
        c++;
    }
 

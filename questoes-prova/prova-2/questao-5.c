@@ -1,0 +1,1 @@
+/*Escreva um programa em C que leia uma frase e um caractere. Conte e escreva quantas vezes este caractere aparece na frase*/
