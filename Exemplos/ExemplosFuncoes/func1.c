@@ -34,7 +34,7 @@ printf("soma = %d",resultado);
 printf("\nraio: "); 
 scanf("%f", &ra);
 area_circulo(ra);
-printf("comp: %f", comp_circulo(ra)):
+printf("comp: %f", comp_circulo(ra));
 
  }
  

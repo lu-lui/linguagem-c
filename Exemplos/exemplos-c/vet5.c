@@ -7,26 +7,22 @@
 
 #include <stdio.h>
 #include <string.h>
-int main() {
-int x[10], r[10], i, c;
+	int main() {
+	int x[10], r[10], i, c=0;
 
-for (i =0; i<10 ; i++){
-	printf ("digite x[%d]: ", i);
-	scanf("%d",&x[i]);
-}
+	for (i =0; i<10 ; i++){
+		printf ("digite x[%d]: ", i);
+		scanf("%d",&x[i]);
+	}
 
-c=0;
-for (i =0; i<10 ; i++){
-	if(x[i] < 0){
-	   r[c] = x[i];
-	   c++;
-    }
-}
+	for (i =0; i<10 ; i++){
+		if(x[i] < 0){
+		r[c] = x[i];
+		c++;
+		}
+	}
 
-
-for (i =0; i<c ; i++){
-   printf ("digite r[%d]: %d ", i, r[i]);
-
-}
- 
+	for (i =0; i<c ; i++){
+		printf ("r[%d]: %d \n", i, r[i]);
+	}
 }
