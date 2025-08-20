@@ -33,5 +33,5 @@ int main(){
         dSecundaria += M[i][4-i]; 
     }
 
-    printf("a) Soma linha 3: %d \nb)Soma coluna 2: %d \nc) Soma da diagonal principal: %d \nd) Soma da diagonal secundaria: %d \ne) Soma de todos os elementos da matriz: %d", linha3, coluna2, dPrincipal, dSecundaria, soma);
+    printf("a) Soma linha 3: %d \nb) Soma coluna 2: %d \nc) Soma da diagonal principal: %d \nd) Soma da diagonal secundaria: %d \ne) Soma de todos os elementos da matriz: %d", linha3, coluna2, dPrincipal, dSecundaria, soma);
 }
